@@ -5,10 +5,8 @@
 ---
 
 ## 1. Purpose  
-We are training a machine learning model to analyze driver behavior at stop signs.  
-This protocol defines clear annotation instructions for remote annotators to ensure **high-quality, consistent labels** that support downstream model training and evaluation.  
-
-Stop sign compliance labels directly enrich high-definition mapping by providing context on lane-level behavior at intersections, strengthening the accuracy of Nexar’s Live HD Maps.
+- This protocol provides clear and objective labeling rules for stop-sign encounters.
+- It ensures consistent, high-quality annotations that directly improve driver-behavior models and, downstream, enhance the accuracy of Nexar’s Live HD Maps.
 
 ---
 
@@ -49,11 +47,8 @@ Annotators must assign **exactly one label** per stop-sign encounter:
 ---
 
 ## 6. Trade-offs  
-- **Simplicity vs Richness:**  
-  - A simple 4-label scheme maximizes inter-annotator agreement and reduces noise.  
-  - A more detailed protocol (timestamps, directions, inch-up stops) could capture richer features but would slow annotation and increase inconsistency.  
-- **Decision:** For this task, simplicity was chosen to ensure data quality and minimize ambiguity.  
-
+- While a detailed protocol could capture richer features such as timestamps, turning directions, or multi-vehicle interactions, it would increase annotator burden and introduce higher label noise.
+- For production pipelines, the 4-label scheme (Full Stop, Rolling Stop, No Stop, Unclear) was chosen to maximize consistency, reduce ambiguity, and scale efficiently.
 ---
 
 ## 7. Why This Protocol Supports Effective Model Training  
@@ -85,4 +80,5 @@ In some projects, richer annotations may be useful. Below is an alternative desi
 **Pros:** Very rich data, supports multiple downstream tasks.  
 **Cons:** Increases annotation time and inconsistency; lowers inter-annotator agreement.  
 
-**Conclusion:** While the detailed protocol offers flexibility, for production pipelines we prioritize the **simple 4-label scheme** to maximize consistency, data quality, and annotation efficiency.  
+**Conclusion:** Selecting the simple 4-label protocol reflects a production-oriented mindset: prioritizing annotation quality, consistency, and scalability over annotation richness.
+This balance ensures reliable ground truth for evaluating ML models and supports Nexar’s broader mission of building accurate, real-time HD maps at scale.
