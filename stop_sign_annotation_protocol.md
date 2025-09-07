@@ -8,6 +8,8 @@
 We are training a machine learning model to analyze driver behavior at stop signs.  
 This protocol defines clear annotation instructions for remote annotators to ensure **high-quality, consistent labels** that support downstream model training and evaluation.  
 
+Stop sign compliance labels directly enrich high-definition mapping by providing context on lane-level behavior at intersections, strengthening the accuracy of Nexar’s Live HD Maps.
+
 ---
 
 ## 2. Input Available  
