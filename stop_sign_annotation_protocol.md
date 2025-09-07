@@ -80,5 +80,6 @@ In some projects, richer annotations may be useful. Below is an alternative desi
 **Pros:** Very rich data, supports multiple downstream tasks.  
 **Cons:** Increases annotation time and inconsistency; lowers inter-annotator agreement.  
 
-## **Conclusion:** Selecting the simple 4-label protocol reflects a production-oriented mindset: prioritizing annotation quality, consistency, and scalability over annotation richness.
-This balance ensures reliable ground truth for evaluating ML models and supports Nexar’s broader mission of building accurate, real-time HD maps at scale.
+## **Conclusion:** 
+- Selecting the simple 4-label protocol reflects a production-oriented mindset: prioritizing annotation quality, consistency, and scalability over annotation richness.
+- This balance ensures reliable ground truth for evaluating ML models and supports Nexar’s broader mission of building accurate, real-time HD maps at scale.
