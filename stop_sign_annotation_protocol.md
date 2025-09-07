@@ -1,5 +1,5 @@
 # 🚦 Stop Sign Behavior Annotation Protocol  
-**Assignment:** Nexar Home Assignment — Stop Sign Behavior  
+**Assignment:** Nexar Home Assignment - Stop Sign Behavior  
 **Candidate:** Omer Ben Simon (Machine Learning Model Evaluation Engineer, Computer Vision)  
 
 ---
